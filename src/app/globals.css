@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Mea+Culpa&family=MonteCarlo&family=Outfit:wght@300;400;500;600;700&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+@import "tailwindcss";
+
+:root {
+  --royal-maroon: #38040a;
+  --royal-card-bg: rgba(26, 4, 8, 0.84);
+  --gold-glow: #f6d87e;
+  --gold-accent: #d4af37;
+  --gold-light: #fff5d0;
+  --ivory-text: #fffdf7;
+  --cream-body: #f4ecdf;
+}
+
+/* Calligraphic & Regal Wedding Fonts */
+.font-adeline {
+  font-family: 'Great Vibes', 'Alex Brush', 'Playfair Display', Georgia, cursive;
+}
+
+.font-madison {
+  font-family: 'Mea Culpa', 'Pinyon Script', 'Cormorant Garamond', Georgia, cursive;
+}
+
+.font-pinyon {
+  font-family: 'Pinyon Script', 'Great Vibes', Georgia, cursive;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+}
+
+.font-cinzel-dec {
+  font-family: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-body {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Deep Royal Maroon & Gold Calligraphy (Supreme contrast on parchment video) */
+.maroon-heading-gradient {
+  background: linear-gradient(135deg, #240206 0%, #45050d 50%, #600915 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 1px 1px rgba(255, 235, 170, 0.8)) drop-shadow(0 2px 10px rgba(0, 0, 0, 0.3));
+}
+
+.rose-heading-gradient {
+  background: linear-gradient(135deg, #3a040d 0%, #660c1c 50%, #88152b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 1px 1px rgba(255, 220, 210, 0.8)) drop-shadow(0 2px 10px rgba(0, 0, 0, 0.3));
+}
+
+/* High-Contrast Royal Gold & Rose Shimmer Text */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #fff2b8 20%, #f6cb59 50%, #df9f28 80%, #fff7d6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.9));
+}
+
+.rose-gold-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #ffe0d5 25%, #f2a694 55%, #df7f6b 85%, #fff1ec 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.9));
+}
+
+.gold-shadow {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9), 0 0 16px rgba(246, 216, 126, 0.35);
+}
+
+.dark-backdrop-shadow {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95), 0 4px 18px rgba(0, 0, 0, 0.8);
+}
+
+/* Royal Wedding Cards - Velvet Maroon Glass with Gold Inlay */
+.wedding-card {
+  background: rgba(22, 3, 7, 0.86);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1.5px solid rgba(226, 192, 100, 0.42);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.7), 0 0 25px rgba(212, 175, 55, 0.15), inset 0 0 18px rgba(255, 230, 150, 0.05);
+}
+
+.wedding-card-glow {
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.28), inset 0 0 15px rgba(212, 175, 55, 0.12);
+}
+
+/* Lenis Recommended CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 2, 4, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.5);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.9);
+}
+
+/* Subtle Shimmer Animation */
+@keyframes shimmerPulse {
+  0%, 100% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+    filter: drop-shadow(0 0 14px rgba(246, 216, 126, 0.6));
+  }
+}
+
+.animate-shimmer {
+  animation: shimmerPulse 3.5s ease-in-out infinite;
+}
