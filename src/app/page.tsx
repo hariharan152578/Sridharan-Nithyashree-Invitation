@@ -14,6 +14,7 @@ import {
   GoldenDivider,
   CornerOrnament,
 } from "@/components/DecorativeOrnaments";
+import WeddingPreloader from "@/components/WeddingPreloader";
 import {
   Calendar,
   Clock,
@@ -41,6 +42,9 @@ export default function WeddingInvitation() {
 
   return (
     <SmoothScroll>
+      {/* Auspicious Wedding Preloader ensuring video frames & images buffer smoothly */}
+      <WeddingPreloader />
+
       <MobileFrame>
         {/* Background Video with Active Play-on-Scroll Controller */}
         <BackgroundVideoScroller />

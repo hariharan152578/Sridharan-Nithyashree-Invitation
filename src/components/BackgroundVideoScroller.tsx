@@ -90,6 +90,16 @@ export default function BackgroundVideoScroller() {
           muted
           loop
           preload="auto"
+          onLoadedData={() => {
+            if (typeof window !== "undefined") {
+              window.dispatchEvent(new CustomEvent("wedding-video-ready"));
+            }
+          }}
+          onCanPlay={() => {
+            if (typeof window !== "undefined") {
+              window.dispatchEvent(new CustomEvent("wedding-video-ready"));
+            }
+          }}
           className="w-full h-full object-cover object-center"
           style={{ opacity: 1 }}
         />
