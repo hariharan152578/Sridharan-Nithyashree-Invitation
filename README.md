@@ -1,6 +1,6 @@
-# Sridharan-Nithyashree-Invitation
+# Sridharan-Nithyasri-Invitation
 
-A luxury mobile-first Vedic wedding e-invitation web application celebrating the sacred union of **Selvi J. Nithyashree** & **Sri. N. Sridharan**.
+A luxury mobile-first Vedic wedding e-invitation web application celebrating the sacred union of **Selvi J. Nithyasri** & **Sri. N. Sridharan**.
 
 ## ✨ Features
 - **Royal South Indian Temple Aesthetics**: Deep velvet maroon glass cards, golden foil ornamentation, traditional floral and brass diya borders.
@@ -9,7 +9,7 @@ A luxury mobile-first Vedic wedding e-invitation web application celebrating the
 - **Ancestral Lineage**: Detailed paternal lineages honoring Sivachariyar Gurukulams of Avinashi, Mayiladuthurai, and Tiruchengode.
 - **Interactive Virtual Akshatha**: Shower turmeric, golden akshatha, and sacred flower petals upon the couple with haptic response.
 - **Interactive RSVP & Guestbook**: Heartfelt wishes feed with WhatsApp forwarding.
-- **One-Tap Calendar & Navigation**: Add to Google Calendar / Apple Calendar (.ics) and GPS directions to Sengunthar Kalyana Mandapam, Tiruchengode.
+- **One-Tap Calendar & Navigation**: Add to Google Calendar / Apple Calendar (.ics) and GPS directions to Anugraha Thirumana Mandapam.
 
 ## 🛠️ Tech Stack
 - **Framework**: Next.js 16 (Turbopack, App Router)

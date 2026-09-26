@@ -154,7 +154,7 @@ export default function WeddingPreloader() {
 
             {/* Couple Names */}
             <h1 className="font-madison text-3xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-amber-100 via-amber-200 to-amber-400 py-1 drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)] leading-tight">
-              Nithyashree & Sridharan
+              Nithyasri & Sridharan
             </h1>
 
             <p className="text-[10.5px] text-amber-200/70 font-cinzel tracking-widest uppercase mt-0.5 font-medium">

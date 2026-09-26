@@ -59,7 +59,7 @@ export default function RsvpWishes() {
     setSubmitted(true);
 
     // Optional WhatsApp share link
-    const whatsappText = `🌸 *Wedding Wishes for Nithyashree & Sridharan* 🌸\nFrom: ${name} (${relation || "Well-wisher"})\nStatus: ${
+    const whatsappText = `🌸 *Wedding Wishes for Nithyasri & Sridharan* 🌸\nFrom: ${name} (${relation || "Well-wisher"})\nStatus: ${
       attending === "attending" ? "Attending in Person" : attending === "virtual" ? "Attending Virtually" : "Sending Blessings"
     }\nMessage: "${message}"\n\nMay Lord Shiva & Parvathi bless the couple! ✨`;
     
@@ -73,7 +73,7 @@ export default function RsvpWishes() {
 
   const handleWhatsAppSend = () => {
     const text = encodeURIComponent(
-      `🌸 *Warm Wedding Greetings for Nithyashree & Sridharan* 🌸\n` +
+      `🌸 *Warm Wedding Greetings for Nithyasri & Sridharan* 🌸\n` +
       `Dearest Nithya & Sridharan,\n` +
       `${message ? `"${message}"\n` : "Heartiest congratulations on your upcoming wedding ceremony!\n"}` +
       `With lots of love & blessings,\n` +
@@ -92,7 +92,7 @@ export default function RsvpWishes() {
           </h3>
         </div>
         <p className="text-center text-xs text-amber-200/60 mb-5 font-body">
-          Share your heartfelt wishes with Nithyashree & Sridharan
+          Share your heartfelt wishes with Nithyasri & Sridharan
         </p>
 
         {submitted ? (

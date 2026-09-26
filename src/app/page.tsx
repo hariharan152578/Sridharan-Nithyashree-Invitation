@@ -126,7 +126,7 @@ export default function WeddingInvitation() {
                     Bride
                   </span>
                   <h2 className="font-adeline text-3xl sm:text-4xl rose-heading-gradient py-0.5 font-normal tracking-wide">
-                    Selvi J. Nithyashree
+                    Selvi J. Nithyasri
                   </h2>
                   <span className="text-[10.5px] text-rose-900 font-cinzel font-bold tracking-wider">
                     B.Sc., (CDF)
@@ -143,7 +143,7 @@ export default function WeddingInvitation() {
                   Parabhava Year • Aippasi 15th
                 </p>
                 <p className="text-[11px] text-[#f1ece1] font-body mt-0.5 font-medium">
-                  Sengunthar Kalyana Mandapam, Tiruchengode
+                  Anugraha Thirumana Mandapam
                 </p>
               </div>
             </motion.div>
@@ -255,7 +255,7 @@ export default function WeddingInvitation() {
                 </span>
               </div>
               <h4 className="font-playfair text-xl font-bold text-amber-100">
-                Selvi J. Nithyashree <span className="text-xs font-normal text-rose-300/90 font-body">(B.Sc., CDF)</span>
+                Selvi J. Nithyasri <span className="text-xs font-normal text-rose-300/90 font-body">(B.Sc., CDF)</span>
               </h4>
               <p className="text-xs text-amber-200/90 mt-1 font-body">
                 Beloved Daughter of:
@@ -449,7 +449,7 @@ export default function WeddingInvitation() {
                 Kalyana Mandapam
               </span>
               <h3 className="font-playfair text-xl sm:text-2xl font-bold text-amber-100 mt-1">
-                Sengunthar Kalyana Mandapam
+                Anugraha Thirumana Mandapam
               </h3>
               <p className="text-xs text-amber-200/90 font-body mt-0.5 font-medium">
                 Tiruchengode, Tamil Nadu
@@ -611,7 +611,7 @@ export default function WeddingInvitation() {
                 Bless The Couple
               </h3>
               <p className="text-xs text-amber-200/90 font-body max-w-xs mx-auto">
-                Tap the button below to shower sacred flower petals and golden akshatha upon Nithyashree & Sridharan!
+                Tap the button below to shower sacred flower petals and golden akshatha upon Nithyasri & Sridharan!
               </p>
 
               <AkshathaConfetti />
@@ -643,7 +643,7 @@ export default function WeddingInvitation() {
           <footer className="w-full text-center py-7 px-5 rounded-3xl bg-[#280308]/90 backdrop-blur-md border border-amber-400/40 mt-8 mb-4 flex flex-col items-center shadow-2xl">
             <SacredOm className="w-8 h-8 text-amber-400 mb-2 drop-shadow-[0_0_8px_rgba(245,208,97,0.8)]" />
             <p className="font-madison text-3xl sm:text-4xl text-amber-200">
-              Nithyashree & Sridharan
+              Nithyasri & Sridharan
             </p>
             <p className="text-[11px] text-amber-300 tracking-[0.2em] uppercase font-cinzel mt-1 font-semibold">
               01 • 11 • 2026 • Tiruchengode

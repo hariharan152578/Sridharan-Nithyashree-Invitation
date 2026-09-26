@@ -10,19 +10,19 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Wedding Invitation | Selvi J. Nithyashree & Sri N. Sridharan",
+  title: "Wedding Invitation | Selvi J. Nithyasri & Sri N. Sridharan",
   description:
-    "Vivaha Subhamuhurtha Ahvana Patrika — Join us in celebrating the auspicious wedding ceremony of Selvi J. Nithyashree & Sri N. Sridharan on 01 November 2026 at Sengunthar Kalyana Mandapam, Tiruchengode.",
+    "Vivaha Subhamuhurtha Ahvana Patrika — Join us in celebrating the auspicious wedding ceremony of Selvi J. Nithyasri & Sri N. Sridharan on 01 November 2026 at Anugraha Thirumana Mandapam.",
   keywords: [
     "Wedding Invitation",
-    "Nithyashree Sridharan Wedding",
-    "Tiruchengode Wedding",
+    "Nithyasri Sridharan Wedding",
+    "Anugraha Thirumana Mandapam",
     "Vivaha Subhamuhurtha",
   ],
   openGraph: {
-    title: "Wedding Invitation | Nithyashree & Sridharan",
+    title: "Wedding Invitation | Nithyasri & Sridharan",
     description:
-      "Auspicious Vivaha Subha Mahotsavam on Sunday, 01 November 2026, Sengunthar Kalyana Mandapam, Tiruchengode.",
+      "Auspicious Vivaha Subha Mahotsavam on Sunday, 01 November 2026, Anugraha Thirumana Mandapam.",
     type: "website",
   },
 };
