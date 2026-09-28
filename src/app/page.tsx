@@ -143,7 +143,7 @@ export default function WeddingInvitation() {
                   Parabhava Year • Aippasi 15th
                 </p>
                 <p className="text-[11px] text-[#f1ece1] font-body mt-0.5 font-medium">
-                  Anugraha Thirumana Mandapam
+                 Sengunthar Thirumana Mandapam
                 </p>
               </div>
             </motion.div>
@@ -180,9 +180,9 @@ export default function WeddingInvitation() {
                     , this auspicious Panigrahaṇa Vivaha Subha Mahotsavam is sanctified.
                   </p>
                   <p>
-                    Under the spiritual benevolence of{" "}
+                    Under the spiritual benevolence of Principal & Guru,{" "}
                     <span className="text-amber-200 font-semibold">
-                      Sivagama Kalanidhi / Sivagama Visarada Sri A.S. Sundaramurthy Sivachariyar
+                      Sivagama Kalanidhi / Sivagama Visarada Sri A.S. Sundaramurthy Sivachariyar & Mahalakshmi
                     </span>{" "}
                     of Avinashi, representing the sacred{" "}
                     <span className="italic text-amber-300">
@@ -240,8 +240,8 @@ export default function WeddingInvitation() {
                 <p className="text-amber-300/80 uppercase tracking-wider text-[10px] font-cinzel font-bold">
                   Paternal Lineage
                 </p>
-                <p>• Grandson of Sri M. Subramanya Sivachariyar & Srimathi Shanthi</p>
-                <p>• Great-grandson of Konerirajapuram S. Sabesa Sivachariyar & Srimathi Sundarambal</p>
+                <p>• Great-grandson of Sri M. Subramanya Sivachariyar & Srimathi Shanthi</p>
+                <p>• Grandson of Konerirajapuram S. Sabesa Sivachariyar & Srimathi Sundarambal</p>
                 <p className="text-[10px] text-amber-300/70 pt-0.5 font-medium">Native: Mayiladuthurai / Konerirajapuram</p>
               </div>
             </div>
@@ -268,8 +268,8 @@ export default function WeddingInvitation() {
                 <p className="text-rose-300/80 uppercase tracking-wider text-[10px] font-cinzel font-bold">
                   Paternal Lineage
                 </p>
-                <p>• Granddaughter of Sri R. Thangachubramanya Sivachariyar & Mathusri Yogambal</p>
                 <p>• Great-granddaughter of Tiruchengode Sri T.K. Sundaresa Sivachariyar & Mathusri Vasantha</p>
+                <p>• Granddaughter of Sri R. Thangachubramanya Sivachariyar & Mathusri Yogambal</p>
                 <p className="text-[10px] text-rose-300/70 pt-0.5 font-medium">Native: Tiruchengode</p>
               </div>
             </div>
@@ -424,6 +424,95 @@ export default function WeddingInvitation() {
                   </div>
                 </div>
               </div>
+
+              {/* Event 3: Wedding Reception */}
+              <div className="wedding-card rounded-2xl p-4 sm:p-5 relative border-t-2 border-t-amber-400/60 overflow-hidden">
+                <div className="flex items-start justify-between">
+                  <div>
+                    <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-cinzel uppercase tracking-wider bg-amber-400/25 text-amber-200 mb-1.5 font-bold">
+                      <Sparkles className="w-3 h-3 text-amber-300" /> Post-Wedding Reception
+                    </span>
+                    <h4 className="font-playfair text-base sm:text-lg font-bold text-amber-100">
+                      Wedding Reception
+                    </h4>
+                    <p className="text-xs text-amber-200/80 font-body">
+                      Grand Evening of Celebration & Felicitation
+                    </p>
+                  </div>
+                </div>
+
+                {/* Wedding Illustration: Grand Reception Stage */}
+                <div className="my-3 overflow-hidden rounded-xl border border-amber-400/30 shadow-lg bg-black/40">
+                  <img
+                    src="/reception-stage.jpg"
+                    alt="Wedding Reception Ceremony"
+                    className="w-full h-44 object-cover object-center"
+                  />
+                  <div className="p-2 bg-black/70 text-center border-t border-amber-400/20">
+                    <p className="text-[10.5px] text-amber-200 font-cinzel">
+                      Grand Reception Stage & Felicitation of the Newlyweds
+                    </p>
+                  </div>
+                </div>
+
+                {/* Date & Time Highlights */}
+                <div className="mt-2 space-y-2 text-xs font-body text-stone-100 bg-black/60 p-3.5 rounded-xl border border-amber-400/30">
+                  <div className="flex items-center justify-between">
+                    <span className="text-stone-300">Date:</span>
+                    <span className="font-bold text-amber-200 font-cinzel text-sm">
+                      Tuesday, 03 November 2026
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-stone-300">Tamil Calendar:</span>
+                    <span className="text-stone-100 font-medium">
+                      Parabhava Year, Aippasi 17th
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-stone-300">Timing:</span>
+                    <span className="font-bold text-amber-300 text-sm font-cinzel">
+                      6:00 PM to 9:00 PM
+                    </span>
+                  </div>
+                  <div className="flex items-start justify-between pt-2 border-t border-amber-400/20">
+                    <span className="text-stone-300 flex items-center gap-1.5">
+                      <MapPin className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" />
+                      Venue:
+                    </span>
+                    <div className="text-right">
+                      <span className="font-bold text-amber-100 block font-playfair text-xs sm:text-sm">
+                        Anugraha Kalyana Mandapam
+                      </span>
+                      <span className="text-stone-300 text-[11px] block">
+                        Mayiladuthurai, Tamil Nadu
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Quick Action Buttons */}
+                <div className="mt-3 grid grid-cols-2 gap-2 text-xs font-body">
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Anugraha+Kalyana+Mandapam+Mayiladuthurai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-amber-400/15 hover:bg-amber-400/25 border border-amber-400/35 text-amber-200 font-medium tracking-wide transition-all active:scale-95 text-center"
+                  >
+                    <MapPin className="w-3.5 h-3.5 text-amber-400" />
+                    <span>Venue Directions</span>
+                  </a>
+                  <a
+                    href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+Reception%3A+Nithyasri+%26+Sridharan&dates=20261103T123000Z%2F20261103T153000Z&details=Grand+Wedding+Reception+of+Selvi+J.+Nithyasri+%26+Sri+N.+Sridharan+at+Anugraha+Kalyana+Mandapam%2C+Mayiladuthurai.&location=Anugraha+Kalyana+Mandapam%2C+Mayiladuthurai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-stone-900/80 hover:bg-stone-850 border border-amber-400/25 text-amber-200/90 font-medium tracking-wider active:scale-95 transition-all text-center"
+                  >
+                    <Calendar className="w-3.5 h-3.5 text-amber-300" />
+                    <span>Add to Calendar</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </motion.section>
 
@@ -435,24 +524,24 @@ export default function WeddingInvitation() {
               <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-[#34040a]/90 backdrop-blur-md border border-amber-400/60 shadow-lg mb-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
                 <span className="text-[10px] tracking-[0.25em] text-amber-200 uppercase font-cinzel font-bold">
-                  Auspicious Venue
+                  Auspicious Venues
                 </span>
                 <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
               </div>
               <h3 className="font-cinzel text-xl sm:text-2xl font-black text-[#2e0307] tracking-wide drop-shadow-[0_1px_2px_rgba(255,255,255,0.95)]">
-                Wedding Venue & Map
+                Wedding & Reception Venues
               </h3>
             </div>
 
             <div className="wedding-card rounded-3xl p-5 sm:p-6 text-center relative overflow-hidden">
               <span className="text-[10px] tracking-[0.25em] text-amber-300 uppercase font-cinzel font-bold">
-                Kalyana Mandapam
+                Auspicious Locations
               </span>
               <h3 className="font-playfair text-xl sm:text-2xl font-bold text-amber-100 mt-1">
-                Anugraha Thirumana Mandapam
+                Tiruchengode & Mayiladuthurai
               </h3>
               <p className="text-xs text-amber-200/90 font-body mt-0.5 font-medium">
-                Tiruchengode, Tamil Nadu
+                Muhurtham & Reception Ceremonies
               </p>
 
               <GoldenDivider className="my-4" />
@@ -567,10 +656,10 @@ export default function WeddingInvitation() {
                 <div className="p-3 rounded-xl bg-black/60 border border-amber-400/25">
                   <p className="font-bold text-amber-200 font-cinzel">Loving Sisters & Family</p>
                   <p className="text-[11px] text-[#ebe4d8] mt-1">
-                    <strong className="text-amber-200">J. Thangalechumi</strong> (B.Tech., IT, Senior Software Developer, VVDN Technologies)
+                  <strong className="text-amber-200">B.Rajaganesh</strong>(M.C.A),<strong className="text-amber-200">J. Thangalakshmi </strong> (B.Tech., IT, Senior Software Developer, VVDN Technologies)
                   </p>
                   <p className="text-[11px] text-[#ebe4d8]">
-                    <strong className="text-amber-200">J. Sruthi</strong> (B.Com., PA, MBA) & <strong className="text-amber-200">J. Nithyapriya</strong>
+                    <strong className="text-amber-200">J. Srinithi</strong> (B.Com., PA, MBA (pursuing)) & <strong className="text-amber-200">Appukutty</strong> & <strong className="text-amber-200">J.Rithanya</strong>
                   </p>
                 </div>
 
