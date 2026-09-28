@@ -143,7 +143,10 @@ export default function WeddingInvitation() {
                   Parabhava Year • Aippasi 15th
                 </p>
                 <p className="text-[11px] text-[#f1ece1] font-body mt-0.5 font-medium">
-                 Sengunthar Thirumana Mandapam
+                  Sengunthar Thirumana Mandapam
+                </p>
+                <p className="text-[11px] text-[#f1ece1] font-body mt-0.5 font-medium">
+                  (Tiruchengode)
                 </p>
               </div>
             </motion.div>
@@ -173,7 +176,9 @@ export default function WeddingInvitation() {
 
                 <div className="space-y-3 text-xs text-[#f1ece1] font-body leading-relaxed">
                   <p>
-                    With the revered benign blessings of{" "}
+                    With the revered benign blessings of{" "} <strong className="text-amber-200 font-cinzel font-bold">Jagadguru Sri Sri Sri jayendrapri maha swamigal </strong>
+Sri Kailasha ashrama maha samasthanam.
+Rajarajeshwari temple.
                     <strong className="text-amber-200 font-cinzel font-bold">
                       Poojya Sri Sri Sri Ravi Shankar Guruji
                     </strong>
@@ -656,10 +661,10 @@ export default function WeddingInvitation() {
                 <div className="p-3 rounded-xl bg-black/60 border border-amber-400/25">
                   <p className="font-bold text-amber-200 font-cinzel">Loving Sisters & Family</p>
                   <p className="text-[11px] text-[#ebe4d8] mt-1">
-                  <strong className="text-amber-200">B.Rajaganesh</strong>(M.C.A),<strong className="text-amber-200">R.Sahana</strong>,<strong className="text-amber-200">J. Thangalakshmi </strong> (B.Tech., IT, Senior Software Developer, VVDN Technologies)
+                    <strong className="text-amber-200">B.Rajaganesh</strong> (M.C.A), <strong className="text-amber-200">R.Sahana</strong> (B.Com.),<br/> <strong className="text-amber-200">J. Thangalakshmi </strong> (B.Tech., IT, Senior Software Developer, VVDN Technologies)
                   </p>
                   <p className="text-[11px] text-[#ebe4d8]">
-                    <strong className="text-amber-200">J. Srinithi</strong> (B.Com., PA, MBA (pursuing)) , <strong className="text-amber-200">Appukutty</strong> & <strong className="text-amber-200">J.Rithanya</strong>
+                    <strong className="text-amber-200">J. Srinithi</strong> (B.Com., PA, MBA (pursuing)), <strong className="text-amber-200">Appukutty</strong> & <strong className="text-amber-200">J.Rithanya</strong>
                   </p>
                 </div>
 

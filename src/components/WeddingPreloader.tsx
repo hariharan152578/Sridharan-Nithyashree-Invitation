@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SacredOm, CornerOrnament } from "./DecorativeOrnaments";
-import { Sparkles } from "lucide-react";
+import { Sparkles, Music } from "lucide-react";
 
 export default function WeddingPreloader() {
   const [progress, setProgress] = useState(0);
@@ -52,15 +52,16 @@ export default function WeddingPreloader() {
 
     // 4. Smooth progress animation loop
     const startTime = Date.now();
-    const minLoadDuration = 1400; // Minimum 1.4s for majestic presentation
+    const minLoadDuration = 1200; // 1.2s smooth loading
+    let autoEnterTimeout: ReturnType<typeof setTimeout> | null = null;
 
     const interval = setInterval(() => {
       const elapsed = Date.now() - startTime;
       const timeRatio = Math.min(1, elapsed / minLoadDuration);
 
       setProgress((prev) => {
-        if (prev < 90) {
-          return Math.min(90, prev + Math.floor(Math.random() * 8) + 4);
+        if (prev < 95) {
+          return Math.min(95, prev + Math.floor(Math.random() * 12) + 6);
         }
         return prev;
       });
@@ -68,33 +69,40 @@ export default function WeddingPreloader() {
       if (timeRatio >= 1) {
         clearInterval(interval);
         setProgress(100);
-        setTimeout(() => {
-          setIsLoaded(true);
-        }, 200);
+        setIsLoaded(true);
 
-        // Auto-dismiss after brief celebration
-        setTimeout(() => {
-          setShouldRemove(true);
-        }, 800);
+        // Safety fallback: auto-open after 6s if not tapped
+        autoEnterTimeout = setTimeout(() => {
+          handleManualEnter();
+        }, 6000);
       }
-    }, 70);
+    }, 60);
 
-    // Safety fallback: maximum 3.2s
+    // Safety fallback: maximum 2.8s to reach 100% loaded
     const maxSafetyTimeout = setTimeout(() => {
       clearInterval(interval);
       setProgress(100);
       setIsLoaded(true);
-      setTimeout(() => setShouldRemove(true), 500);
-    }, 3200);
+    }, 2800);
 
     return () => {
       clearInterval(interval);
+      if (autoEnterTimeout) clearTimeout(autoEnterTimeout);
       clearTimeout(maxSafetyTimeout);
       window.removeEventListener("wedding-video-ready", handleVideoReady);
     };
   }, []);
 
   const handleManualEnter = () => {
+    try {
+      const audio = document.getElementById("wedding-bg-audio") as HTMLAudioElement | null;
+      if (audio) {
+        audio.play().catch(() => {});
+      }
+    } catch {}
+    if (typeof window !== "undefined") {
+      window.dispatchEvent(new CustomEvent("wedding-enter-clicked"));
+    }
     setShouldRemove(true);
   };
 
@@ -103,10 +111,11 @@ export default function WeddingPreloader() {
       {!shouldRemove && (
         <motion.div
           key="wedding-preloader"
+          onClick={handleManualEnter}
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, scale: 1.04 }}
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed inset-0 z-[100] flex flex-col items-center justify-between py-10 px-6 bg-gradient-to-b from-[#1c0206] via-[#120104] to-[#0a0102] text-center select-none overflow-hidden"
+          className="fixed inset-0 z-[100] flex flex-col items-center justify-between py-10 px-6 bg-gradient-to-b from-[#1c0206] via-[#120104] to-[#0a0102] text-center select-none overflow-hidden cursor-pointer"
         >
           {/* Ornate Gold Border Corners */}
           <CornerOrnament position="tl" />
@@ -182,17 +191,34 @@ export default function WeddingPreloader() {
             </div>
 
             {/* Tap to Open Button when ready */}
-            {isLoaded && (
-              <motion.button
-                initial={{ opacity: 0, scale: 0.9, y: 10 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                onClick={handleManualEnter}
-                className="mt-6 px-6 py-2 rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 text-stone-950 font-cinzel font-bold text-[10.5px] tracking-[0.22em] uppercase shadow-[0_4px_22px_rgba(245,208,97,0.5)] active:scale-95 transition-all flex items-center gap-1.5 cursor-pointer"
-              >
-                <Sparkles className="w-3.5 h-3.5 text-stone-950" />
-                <span>Open Invitation</span>
-              </motion.button>
-            )}
+            {isLoaded ? (
+              <div className="flex flex-col items-center mt-5">
+                <motion.button
+                  initial={{ opacity: 0, scale: 0.9, y: 10 }}
+                  animate={{
+                    opacity: 1,
+                    scale: [1, 1.05, 1],
+                    y: 0,
+                  }}
+                  transition={{
+                    scale: { repeat: Infinity, duration: 1.8, ease: "easeInOut" },
+                    opacity: { duration: 0.3 },
+                  }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleManualEnter();
+                  }}
+                  className="px-7 py-2.5 rounded-full bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 text-stone-950 font-cinzel font-bold text-[11px] sm:text-xs tracking-[0.22em] uppercase shadow-[0_4px_28px_rgba(245,208,97,0.7)] active:scale-95 transition-all flex items-center gap-2 cursor-pointer border-2 border-amber-200"
+                >
+                  <Music className="w-4 h-4 text-stone-950 animate-bounce" />
+                  <span>Open Invitation</span>
+                  <Sparkles className="w-3.5 h-3.5 text-stone-950" />
+                </motion.button>
+                <p className="text-[10px] text-amber-200/90 font-cinzel tracking-wider mt-2 animate-pulse font-medium">
+                  Tap anywhere to enter with music 🎵
+                </p>
+              </div>
+            ) : null}
           </div>
 
           {/* Bottom Blessing Sloka */}
